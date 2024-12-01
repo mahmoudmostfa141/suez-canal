@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-dashboard">
+
+        <div class="sidebar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for spesific date ...">
+                <button><img src="img/search-icon.svg" alt="Search"></button>
+            </div>
+            <div class="current-weather">
+                <div class="weather-icon">
+                    <img src="img/sunny-icon.svg" alt="Current Weather">
+                </div>
+                <h2 id="current-temp">12°C</h2>
+                <p class="current-day">Monday, 16:00</p>
+                <p class="weather-desc">Mostly Cloudy</p>
+                <p class="rain-chance">Rain - 30%</p>
+                <div class="location">
+                    <img src="img/background.jpg" alt="Location">
+                    <p>Suez Canal, Suez, Egypt</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="forecast">
+                <div class="tabs">
+                    <button class="tab" id="today-tab">Today</button>
+                    <button class="tab active" id="week-tab">Week</button>
+                </div>
+                <div class="forecast-days" id="forecast-container">
+                        <div class="forecast-day" id="forecast-day">
+                            <p class="day">Wed</p>
+                            <img src="img/cloudy-icon.svg" alt="Weather Icon">
+                            <p class="temp">26° - 16°</p>
+                        </div>
+                    
+                        <div class="forecast-day" id="forecast-day">
+                            <p class="day">Thu</p>
+                            <img src="img/rainy-icon.svg" alt="Weather Icon">
+                            <p class="temp">26° - 16°</p>
+                        </div>
+                    
+                        <div class="forecast-day" id="forecast-day">
+                            <p class="day">Fri</p>
+                            <img src="img/rainy-icon.svg" alt="Weather Icon">
+                            <p class="temp">27° - 16°</p>
+                        </div>
+                    
+                        <div class="forecast-day" id="forecast-day">
+                            <p class="day">Sat</p>
+                            <img src="img/foggy-icon.svg" alt="Weather Icon">
+                            <p class="temp">27° - 15°</p>
+                        </div>
+                    
+                        <div class="forecast-day" id="forecast-day">
+                            <p class="day">Sun</p>
+                            <img src="img/rainy-icon.svg" alt="Weather Icon">
+                            <p class="temp">23° - 16°</p>
+                        </div>
+                    
+                        <div class="forecast-day" id="forecast-day">
+                            <p class="day">Mon</p>
+                            <img src="img/rainy-icon.svg" alt="Weather Icon">
+                            <p class="temp">20° - 14°</p>
+                        </div>
+                    
+                        <div class="forecast-day" id="forecast-day">
+                            <p class="day">Tue</p>
+                            <img src="img/rainy-icon.svg" alt="Weather Icon">
+                            <p class="temp">19° - 12°</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="highlights">
+                <h3>Today's Highlights</h3>
+                <div class="highlight-cards">
+                    <div class="card">
+                        <h4>UV Index</h4>
+                        <div class="uv-data">
+                            <span class="uv-value">5</span>
+                            <p>Moderate</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Wind Status</h4>
+                        <span class="wind-value">7.70 km/h</span>
+                        <p class="wind-dir">WSW</p>
+                    </div>
+                    <div class="card">
+                        <h4>Sunrise & Sunset</h4>
+                        <span class="value" style="font-size: 25px;">6:35 AM</span><br>
+                        <span class="value" style="font-size: 25px;">5:42 PM</span>
+                    </div>
+                    <div class="card">
+                        <h4>Humidity</h4>
+                        <span class="value">12%</span>
+                        <p>Normal</p>
+                    </div>
+                    <div class="card">
+                        <h4>Visibility</h4>
+                        <span class="value">5.2 km</span>
+                        <p>Average</p>
+                    </div>
+                    <div class="card">
+                        <h4>Air Quality</h4>
+                        <span class="value">105</span>
+                        <p>Unhealthy</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
